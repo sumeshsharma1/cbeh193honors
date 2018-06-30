@@ -2,6 +2,7 @@
 
 iPython Notebooks hosted on Google Colab server for Sumesh Sharma's CBE H193 Honors Thesis
 Case Studies Include:
+  - Analysis of TF-A Transcription Factor in Mammalian Cells
   - Analysis of her1 gene expression in zebrafish
   - Analysis of STAT monomer/dimer concentrations in the JAK2/STAT5 cell signaling pathway
 
