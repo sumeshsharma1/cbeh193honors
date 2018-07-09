@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "breachsafe",
+  "description": "Provides insurance against data breaches and connects you with attorneys if your information was compromised.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "breachsafe.png",
+    "default_popup": "page.html",
+    "default_title": "breachsafe"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "storage"
+  ],
+
+
+  "content_scripts": [
+  	{
+  		"matches": ["https://*/*"],
+  		"exclude_matches": ["*://www.google.com/*"],
+  		"js": ["jquery-3.2.1.min.js", "content.js"]
+  	}
+  ],
+  "web_accessible_resources": [
+    "inject.js"
+  ]
+}
